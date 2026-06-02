@@ -83,7 +83,7 @@ Além do que está em `profile.md`, o agente deve saber:
 - Output: `output/{data} x {Empresa} x {Vaga}.pdf` + companion `.json`
 - Pipeline: profile.md → AI briefing → JSON → typst compile → PDF
 - Versioning: Git
-- **Title per job**: sempre ajustar o título profissional para a vaga específica (ex: "Desenvolvedor Full Stack" → "Desenvolvedor Back-End .NET"). O título do perfil permanece como está no `profile.md`, o currículo reflete o título adaptado.
+- **Title per job**: definir o título profissional no briefing conforme a vaga específica (ex: "Desenvolvedor Full Stack" → "Desenvolvedor Back-End .NET"). O título não fica fixo no perfil — é adaptado a cada currículo.
 - **Work order**: ordenar experiências por relevância para a vaga, não cronologicamente. A experiência mais alinhada com os requisitos deve aparecer primeiro.
 
 ## Features

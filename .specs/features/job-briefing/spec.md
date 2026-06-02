@@ -26,13 +26,13 @@ Fluxo principal: usuário traz uma vaga, IA analisa contra o perfil, sugere adap
   - **Tecnologias:** quais o perfil tem e a vaga pede? Identifique gaps.
   - **Inferência:** C# → .NET (runtime necessário), React → Next.js (ecossistema comum), etc. Se a vaga pede .NET e o perfil tem C#, considere compatível.
   - **Experiência:** as experiências do perfil são relevantes para a vaga?
-  - **Apresentação:** o título e texto de apresentação estão alinhados com a vaga?
+  - **Narrativa de Carreira:** o texto de apresentação (extraído da narrativa) está alinhado com a vaga?
 - Apresente a análise ao usuário
 
 ### 3. Propor Adaptações
 - Sugira adaptações específicas:
   - "Sua experiência como Full Stack pode destacar mais o backend se a vaga é de backend"
-  - "Seu título está como 'Engenheiro de Software'. Para essa vaga, 'Desenvolvedor Full Stack' seria melhor?"
+  - "Para essa vaga, sugiro o título 'Desenvolvedor Full Stack'. O que acha?"
   - "A vaga pede .NET. Você tem C# listado — posso incluir .NET como tecnologia compatível?"
 - O usuário aprova, rejeita ou ajusta cada sugestão
 - Adapte o conteúdo para o currículo (NÃO altere `profile.md` ainda — apenas o currículo)

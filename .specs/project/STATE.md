@@ -27,10 +27,11 @@
 | Node.js Pleno | `output/Jun 2026 x Lyncas x Desenvolvedor Node.js Pleno.json` | `output/...pdf` (63 KB) |
 
 ## Adaptações no Perfil (sessão anterior)
-- Título: "Desenvolvedor Backend | Node.js, NestJS & Arquitetura de Dados" → "Desenvolvedor Full Stack | Node.js, React, Python & Integração com IA"
-- Apresentação: adicionado Python, IA/LLMs, microsserviços
-- Habilidades: Python (intermediário), IA Generativa e LLMs, WebSockets
-- curr-mvp: descrição enriquecida com LLMs, MCPs e agentes de IA
+- (nota: seções referenciadas abaixo usam a nomenclatura anterior à reformulação do profile.md)
+- Título profissional: "Desenvolvedor Backend | Node.js, NestJS & Arquitetura de Dados" → "Desenvolvedor Full Stack | Node.js, React, Python & Integração com IA"
+- Narrativa de Carreira: adicionado Python, IA/LLMs, microsserviços
+- Mapa de Conhecimentos: Python, IA Generativa e LLMs, WebSockets
+- Projetos Pessoais: curr-mvp descrição enriquecida com LLMs, MCPs e agentes de IA
 
 ## Decisões Pendentes
 - Nenhuma.

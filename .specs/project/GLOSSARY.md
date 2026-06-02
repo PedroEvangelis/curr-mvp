@@ -3,7 +3,7 @@
 Termos do domínio do sistema curr-mvp. Mantido vivo — cresce organicamente com novas features.
 
 ## Perfil
-Documento central `profile.md` que contém a base completa do profissional: dados pessoais, redes, experiências, formações, certificações, habilidades, apresentação profissional, título profissional. É a fonte única da verdade para geração de currículos.
+Documento central `profile.md` que contém a base completa do profissional: meta (frontmatter), narrativa de carreira, contexto por experiência, formação, projetos, mapa de conhecimentos, capacidades e idiomas. É a fonte única da verdade para geração de currículos.
 
 ## Vaga (ou Oportunidade)
 Descrição de uma posição/oportunidade profissional. Inclui título, empresa, requisitos, responsabilidades, tecnologias mencionadas. É o input para o briefing e para a geração do currículo.
