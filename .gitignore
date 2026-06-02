@@ -1,0 +1,5 @@
+# tooling
+/bin/
+
+# generated output
+/output/
