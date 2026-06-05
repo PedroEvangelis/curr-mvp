@@ -1,0 +1,25 @@
+{
+  "meta": {
+    "template": "basic-resume",
+    "accent-color": "#26428b",
+    "body-color": "#000000",
+    "font": "Noto Sans",
+    "paper": "a4",
+    "author-position": "left",
+    "personal-info-position": "left",
+    "lang": "en",
+    "keywords": "",
+    "tech-block-font-size": 9.5
+  },
+  "personal": {
+    "name": "",
+    "email": "",
+    "phone": "",
+    "github": "",
+    "linkedin": "",
+    "personal-site": "",
+    "pronouns": ""
+  },
+  "summary": "",
+  "sections": []
+}

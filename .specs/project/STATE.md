@@ -1,37 +1,28 @@
-# Session State — 2026-06-02
+# Session State — 2026-06-03
 
 ## Resumo da Sessão (Acumulado)
 
-### Sessão Atual: Estratégia TOTVS + Enriquecimento de Perfil
+### Sessão Anterior: Estratégia TOTVS + Enriquecimento de Perfil (2026-06-02)
 - Estratégia de posicionamento definida: primário .NET/ERP, secundário Node/React
 - Resumo otimizado para site da TOTVS elaborado
-- Experiência Irrah Tech reescrita com correções: OTEL ("participei ativamente"), Kafka, Ports and Adapters, descrição do Plugchat (multi-canal, bots, IA), Firebase Storage + Realtime
-- Experiência ITEM Sistemas reescrita com destaques: NF-e/NFS-e integrando prefeituras, liderança em testes unitários + refatoração com testes de regressão, documentação interna Vitepress, observabilidade OTEL
-- Data ITEM corrigida: "Setembro 2022 - Maio 2025" (2 anos e 8 meses)
+- Experiências Irrah Tech e ITEM Sistemas reescritas
+- Data ITEM corrigida: "Setembro 2022 - Maio 2025"
 
-### Job 1: Lyncas — FullStack (Python + React)
-- Análise de match, adaptações (Python, IA/LLMs), JSON + PDF gerados
-- Profile.md atualizado
-
-### Job 2: Lyncas — Banco de Talentos .NET C#
-- Match fortíssimo: 3 anos de ecossistema .NET na ITEM Sistemas
-- Currículo posicionado para backend .NET com ênfase em C#, .NET Core, SQL Server, Dapper, microsserviços
-- JSON + PDF gerados separadamente (mantendo o FullStack anterior)
-- Skills reordenadas: .NET em primeiro plano, mensageria/event-driven adicionados como conceitos
+### Sessão Atual: Reestruturação do Projeto (2026-06-03)
+- Criado diretório `src/` com `src/templates/` e `src/scripts/`
+- `templates/` movido para `src/templates/`
+- `bin/lint-json.ts` e `bin/validate-json.ts` movidos para `src/scripts/`
+- Scripts `compile.ps1` e `setup.ps1` na raiz viraram wrappers que delegam para `src/scripts/`
+- Corrigido `sys.inputs.at("data")` para usar `default: "_empty_resume.json"` (lint da ZED)
+- Criado `templates/_empty_resume.json` como fallback para lint standalone
+- Removido `location` do template (não utilizado)
+- Removido `opt-len()` (código morto)
+- Removidos os diretórios antigos (`templates/`, `bin/*.ts`)
+- Todos os paths em `AGENTS.md`, `.specs/` e scripts atualizados
+- Lint (indentação 2 espaços) + validação Zod integrados ao pipeline de compilação
 
 ## Outputs Gerados
-| Currículo | JSON | PDF |
-|-----------|------|-----|
-| FullStack (Python + React) | `output/Jun 2026 x Lyncas x Engenheiro de Software Sênior FullStack.json` | `output/...pdf` (66 KB) |
-| .NET C# (Banco de Talentos) | `output/Jun 2026 x Lyncas x Banco de Talentos .NET.json` | `output/...pdf` (64 KB) |
-| Node.js Pleno | `output/Jun 2026 x Lyncas x Desenvolvedor Node.js Pleno.json` | `output/...pdf` (63 KB) |
-
-## Adaptações no Perfil (sessão anterior)
-- (nota: seções referenciadas abaixo usam a nomenclatura anterior à reformulação do profile.md)
-- Título profissional: "Desenvolvedor Backend | Node.js, NestJS & Arquitetura de Dados" → "Desenvolvedor Full Stack | Node.js, React, Python & Integração com IA"
-- Narrativa de Carreira: adicionado Python, IA/LLMs, microsserviços
-- Mapa de Conhecimentos: Python, IA Generativa e LLMs, WebSockets
-- Projetos Pessoais: curr-mvp descrição enriquecida com LLMs, MCPs e agentes de IA
+- Nenhum novo. Estrutura reorganizada, compilação testada e funcionando.
 
 ## Decisões Pendentes
 - Nenhuma.
@@ -40,9 +31,13 @@
 - Nenhum.
 
 ## Lições Aprendidas
-- Template `resume.typ` exige todos os campos no JSON (`technologies`, `methodologies`, `keywords`, `url`, `bullets`, `pronouns`, `personal-site`) — omitir causa erro.
+- `opt()` no template protege campos ausentes — `none` vira `""` sem quebrar a compilação.
 - `--input data` paths são relativos ao `.typ`, não ao `--root`.
+- `sys.inputs.at("key", default: "...")` requer um default válido — se for uma string, `json()` tenta abrir como arquivo.
+- `Join-Path` no PowerShell 5.1 aceita apenas 2 argumentos posicionais.
 - Múltiplos currículos para mesma empresa com stacks diferentes exigem JSONs separados.
+- `compile.ps1` executa lint (indentação 2 espaços) + validação Zod antes de compilar.
+- Templates .typ referenciam `_empty_resume.json` com caminho relativo ao próprio diretório.
 
 ## Deferred Ideas
 - Script de orquestração para automatizar pipeline profile → JSON → PDF.

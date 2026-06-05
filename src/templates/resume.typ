@@ -1,14 +1,8 @@
 #import "basic-resume/resume.typ": *
 
-#let data = json(sys.inputs.at("data"))
+#let data = json(sys.inputs.at("data", default: "_empty_resume.json"))
 
 #let opt(x) = if x == none { "" } else { x }
-
-#let opt-len(x) = {
-  if type(x) == "array" { x }
-  else if x == none or x == "" { () }
-  else { x }
-}
 
 #let pos(x) = {
   if x == "center" { center }

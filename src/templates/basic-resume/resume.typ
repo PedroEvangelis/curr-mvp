@@ -3,7 +3,6 @@
   author-position: left,
   personal-info-position: left,
   pronouns: "",
-  location: "",
   email: "",
   github: "",
   linkedin: "",
@@ -82,7 +81,6 @@
         let items = (
           contact-item(pronouns),
           contact-item(phone, link-type: "tel:"),
-          contact-item(location),
           contact-item(email, link-type: "mailto:"),
           contact-item(github, link-type: "https://"),
           contact-item(linkedin, link-type: "https://"),
@@ -139,7 +137,6 @@
   institution: "",
   dates: "",
   degree: "",
-  location: "",
   level: "",
   technologies: "",
   methodologies: "",
@@ -152,7 +149,7 @@
     top-left: emph(degree),
     top-right: dates,
     bottom-left: "",
-    bottom-right: emph(location),
+    bottom-right: "",
   )
   v(0.4em)
 }
@@ -161,7 +158,6 @@
   title: "",
   dates: "",
   company: "",
-  location: "",
   technologies: "",
   methodologies: "",
   keywords: "",
@@ -171,7 +167,7 @@
     top-left: strong(title),
     top-right: dates,
     bottom-left: "",
-    bottom-right: emph(location),
+    bottom-right: "",
   )
   v(0.4em)
 }

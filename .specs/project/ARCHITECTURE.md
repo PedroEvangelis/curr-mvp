@@ -13,7 +13,7 @@
 - **Múltiplos templates fixos (um por layout):** Adiado — o template único resolve o caso atual.
 
 **Consequências:**
-- Toda mudança de layout é centralizada em `templates/resume.typ`.
+- Toda mudança de layout é centralizada em `src/templates/resume.typ`.
 - O JSON é o artefato de intercâmbio: pode ser re-renderizado com outros templates no futuro.
 - O template precisa tratar seções vazias, campos opcionais e tipos variantes.
 

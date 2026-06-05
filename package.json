@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "lint": "bun run src/scripts/lint-json.ts",
+    "validate": "bun run src/scripts/validate-json.ts",
+    "typecheck": "tsc",
+    "compile": "bun run src/scripts/compile.ps1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "typescript": "^6.0.3",
+    "zod": "^4.4.3"
+  }
+}

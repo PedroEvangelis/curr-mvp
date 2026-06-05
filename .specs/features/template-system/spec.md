@@ -17,7 +17,7 @@ Define o template único e imutável para renderização de currículos via Typs
 .\setup.ps1
 
 # 2. Gerar currículo
-bin\typst compile --root="." templates\resume.typ "output\2026-05-31 x Empresa x Vaga.pdf" --input data="..\output\2026-05-31 x Empresa x Vaga.json"
+.\compile.ps1 "output/2026-05-31 x Empresa x Vaga.json"
 ```
 
 ## Formato Canônico (Schema JSON)
@@ -38,7 +38,6 @@ bin\typst compile --root="." templates\resume.typ "output\2026-05-31 x Empresa x
   },
   "personal": {
     "name": "string (obrigatório)",
-    "location": "string",
     "email": "string",
     "phone": "string",
     "github": "string",
@@ -63,12 +62,12 @@ bin\typst compile --root="." templates\resume.typ "output\2026-05-31 x Empresa x
 
 **education**
 ```
-{ institution, location, degree, level?, dates: { start, end }, gpa?, technologies?: string[], methodologies?: string[], keywords?: string[], bullets[] }
+{ institution, degree, level?, dates: { start, end }, gpa?, technologies?: string[], methodologies?: string[], keywords?: string[], bullets[] }
 ```
 
 **work**
 ```
-{ company, location, title, dates: { start, end }, technologies?: string[], methodologies?: string[], keywords?: string[], bullets[] }
+{ company, title, dates: { start, end }, technologies?: string[], methodologies?: string[], keywords?: string[], bullets[] }
 ```
 
 **projects**
@@ -105,7 +104,7 @@ bin\typst compile --root="." templates\resume.typ "output\2026-05-31 x Empresa x
 
 ## Funcionamento
 
-O template `templates/resume.typ` é imutável (salvo decisão explícita do usuário, os helpers ficam em `templates/basic-resume/resume.typ`). Ele:
+O template `src/templates/resume.typ` é imutável (salvo decisão explícita do usuário, os helpers ficam em `src/templates/basic-resume/resume.typ`). Ele:
 
 1. Lê JSON de `sys.inputs.at("data")`
 2. Renderiza `data.summary` como parágrafo antes das seções (se existir)

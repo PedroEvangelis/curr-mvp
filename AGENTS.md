@@ -43,24 +43,24 @@ Funciona em Windows, Linux e macOS (PowerShell Core).
 
 ## Template JSON — Atenção: todas as chaves opcionais são obrigatórias
 
-O template em `templates/resume.typ` acessa campos do JSON com notação de ponto (`item.technologies`). Isso **quebra** se a chave não existir no dicionário. Mesmo campos opcionais na spec precisam estar presentes.
+O template em `src/templates/resume.typ` acessa campos do JSON com notação de ponto (`item.technologies`). Isso **quebra** se a chave não existir no dicionário. Mesmo campos opcionais na spec precisam estar presentes.
 
 **Todo JSON deve conter:**
 
 | Contexto | Campos obrigatórios |
 |----------|-------------------|
-| `personal` | `name`, `location`, `email`, `phone`, `github`, `linkedin`, `personal-site`, `pronouns` |
+| `personal` | `name`, `email`, `phone`, `github`, `linkedin`, `personal-site`, `pronouns` |
 | work / education / projects | `technologies: []`, `methodologies: []`, `keywords: []`, `bullets: []` |
 | projects | `url: ""`, `dates: { "start": "", "end": "" }` (mesmo sem datas) |
 | education | `technologies: []`, `methodologies: []`, `keywords: []`, `bullets: []` |
 
-**Antes de gerar JSON**, leia `templates/basic-resume/resume.typ` para verificar os parâmetros exatos que cada helper aceita (`work()`, `edu()`, `project()`, `certificates()`). Isso evita erros de chave faltante na compilação.
+**Antes de gerar JSON**, leia `src/templates/basic-resume/resume.typ` para verificar os parâmetros exatos que cada helper aceita (`work()`, `edu()`, `project()`, `certificates()`). Isso evita erros de chave faltante na compilação.
 
 ## Typst Path Resolution
 
 - `read()` e `json()` resolvem caminhos relativos ao **diretório do arquivo `.typ`** que os chama, não ao `--root`
-- `templates/resume.typ` → `json("data/foo.json")` busca em `templates/data/foo.json`
-- Para acessar `output/file.json` de dentro de `templates/`: usar `../output/file.json`
+- `src/templates/resume.typ` → `json("data/foo.json")` busca em `src/templates/data/foo.json`
+- Para acessar `output/file.json` de dentro de `src/templates/`: usar `../../output/file.json`
 - Usar **forward slashes** (`/`) no caminho (funciona em Windows, Linux e Mac)
 
 ## Profile — Notas sobre Pedro (acumulativo)
@@ -79,7 +79,7 @@ Além do que está em `profile.md`, o agente deve saber:
 ## Conventions
 
 - Profile: `profile.md` (Markdown, incremental, never complete). É a fonte da verdade — deve conter detalhes ricos o suficiente para que um agente entenda profundamente a trajetória do usuário. **Nunca deve ser compactado ou resumido.**
-- Template: `templates/resume.typ` (immutable)
+- Template: `src/templates/resume.typ` (immutable)
 - Output: `output/{data} x {Empresa} x {Vaga}.pdf` + companion `.json`
 - Pipeline: profile.md → AI briefing → JSON → typst compile → PDF
 - Versioning: Git

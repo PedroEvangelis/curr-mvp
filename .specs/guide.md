@@ -55,7 +55,7 @@ desc. vaga ──┘
 
 ```powershell
 .\setup.ps1                           # instala Typst em bin/
-bin\typst compile --root="." templates\resume.typ "output\FILE.pdf" --input data="..\output\FILE.json"
+bin\typst compile --root="." src\templates\resume.typ "output\FILE.pdf" --input data="..\..\output\FILE.json"
 ```
 
 ## Perfil Filosofia
@@ -67,6 +67,6 @@ bin\typst compile --root="." templates\resume.typ "output\FILE.pdf" --input data
 
 ## Template
 
-- Único e imutável: `templates/resume.typ`
+- Único e imutável: `src/templates/resume.typ`
 - Lê dados via `--input data=<json>` + `sys.inputs`
 - Formato canônico em [features/template-system/spec.md](features/template-system/spec.md)
