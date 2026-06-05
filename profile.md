@@ -167,7 +167,7 @@ Principal stack atual. Confortável para fazer tudo que seja possível com a lin
 
 ## Stack que escolhe quando arquiteta o projeto
 
-Sempre JS first quando a escolha é sua. React no frontend, Elysia no backend, PostgreSQL, Redis. Preferências pessoais: Tailwind CSS (desde ITEM Sistemas), ShadCN/UI, Zustand para estado (desde Irrah Tech).
+A que é tecnicamente viável, sendo js a melhor em muitos casos, tanto por preferência pessoal quanto por ser uma das melhores linguagens de alto nível atualmente. Preferências pessoais: React, Elysia, PostgreSQL, Redis, Tailwind CSS (desde ITEM Sistemas), ShadCN/UI, Zustand para estado (desde Irrah Tech).
 
 ## Fundamentos de origem — .NET (C# / VB.NET)
 
@@ -230,11 +230,11 @@ Conhecimento aplicado, não teórico. Implementou eventos Google Analytics, Meta
 
 ## Frontend
 
-React — uma das melhores habilidades no frontend. Conhecimento extenso e aplicado da biblioteca em diversos projetos, incluindo SSR (Server-Side Rendering) com Next.js, que conecta o frontend ao ecossistema backend. VueJS (ITEM Sistemas). HTML5, CSS3 e JavaScript são a base sólida sobre a qual Vue e React foram construídos, com domínio aplicado profissionalmente. Gosta e estuda frontend semanalmente — o foco maior em backend é uma questão de trajetória, não de limitação. Preferências: Tailwind CSS, ShadCN/UI.
+React — uma das melhores habilidades no frontend. Conhecimento extenso e aplicado da biblioteca em diversos projetos, incluindo SSR (Server-Side Rendering) com Next.js, que conecta o frontend ao ecossistema backend. VueJS (ITEM Sistemas e Digital One). HTML5, CSS3 e JavaScript são a base sólida sobre a qual Vue e React foram construídos, com domínio aplicado profissionalmente. Gosta e estuda frontend semanalmente — o foco maior em backend é uma questão de trajetória, não de limitação. Preferências: Tailwind CSS, ShadCN/UI.
 
 ## Banco de Dados
 
-PostgreSQL, SQL Server, MongoDB, Redis, MySQL, Maria DB e Firebase. Experiência com modelagem, otimização de consultas e migrações. Entity Framework Core, Dapper ORM, Drizzle ORM.
+PostgreSQL, SQL Server, MongoDB, Redis, MySQL, Maria DB e Firebase. Experiência com modelagem, otimização de consultas e migrações. Entity Framework Core, Dapper ORM, Drizzle ORM, type ORM e Hibernate.
 
 ---
 
@@ -261,5 +261,4 @@ Capacidade de explicar conceitos complexos de forma clara. Traduz linguagem téc
 # Idiomas
 
 - Português: Nativo
-- Inglês: Intermediário — capacidade de leitura técnica e comunicação
-  
+- Inglês: Intermediário — capacidade de leitura técnica e comunicação básica. 
