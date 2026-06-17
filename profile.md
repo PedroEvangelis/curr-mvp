@@ -48,6 +48,10 @@ O microsserviço integrador é totalmente guiado por suas decisões técnicas.
 
 Acredita que a capacidade de navegar entre ecossistemas (chama de "jinga" ou movimentação) é mais valiosa que conhecimento profundo em uma única stack, por mais que possua conhecimento profundo e sólido de linguagens e frameworks como Typescript/(bun e Node) e C#(.NET). A porta de entrada foi o ecossistema .NET (VB.NET, C#), e quando migrou para Node.js/NestJS, a curva foi baixíssima porque os fundamentos de arquitetura, POO, DDD, TDD e tipagem forte já estavam consolidados. Leva essa adaptabilidade como marca registrada.
 
+A visão atual: **tecnologia e código são meio, não fim**. O objetivo é resolver problemas para pessoas. Por isso criou a skill **spec-driven-analyst** — que materializa essa nova forma de programar: entender o problema primeiro, especificar com clareza, depois codificar com propósito. Não é sobre escrever código bonito, é sobre entregar solução que funciona.
+
+A combinação de experiência em desenvolvimento + marketing + análise de dados trouxe uma **visão de produto e negócio** que vai além do código. Consegue entender o problema de quem usa, traduzir entre áreas técnicas e de negócio, e construir soluções que realmente geram valor. O curr-mvp é a expressão mais direta disso: um protótipo criado em poucos dias para resolver um problema real de geração de currículos.
+
 ## O que o move
 
 Ver o que criou funcionando e sabendo que faz diferença para as pessoas. Na ITEM Sistemas não tinha dimensão do impacto do sistema. Na Irrah Tech isso ficou claro — e virou um padrão que busca em todos os projetos desde então.
@@ -84,7 +88,7 @@ Tecnologias: C#, VB.NET, .NET Core, Entity Framework Core, SQL Server, ETL, API 
 
 ## Irrah Tech | Desenvolvedor Full Stack Pleno | Mai 2025 - Jan 2026
 
-Produto **Plugchat**: plataforma de atendimento que centralizava Instagram, Telegram, WhatsApp e outros canais. Milhares de mensagens por dia. Funcionava como um WhatsApp Web evoluído — times complexos utilizavam uma única conexão WhatsApp para responder mensagens entre diversos terminais, com escala para times grandes, respostas automatizadas via bot e IAs treinadas com base de conhecimento da empresa.
+Produto **Plugchat**: plataforma de atendimento que centralizava Instagram, Telegram, WhatsApp e outros canais. Milhares de mensagens por dia. Funcionava como um WhatsApp Web evoluído — times complexos utilizavam uma única conexão WhatsApp para responder mensagens entre diversos terminais, com escala para times grandes, respostas automatizadas via bot e IAs treinadas com base de conhecimento da empresa. O produto também operava em modelo **whitelabel**, permitindo que parceiros oferecessem a plataforma com sua própria marca.
 
 **Transição de stack:** migrou do ecossistema C#/VB.NET para Node.js/NestJS + Java. Primeira experiência com TypeScript profissional. Curva de ~1 meses até produzir a todo vapor.
 
@@ -231,6 +235,10 @@ Conhecimento aplicado, não teórico. Implementou eventos Google Analytics, Meta
 ## Frontend
 
 React — uma das melhores habilidades no frontend. Conhecimento extenso e aplicado da biblioteca em diversos projetos, incluindo SSR (Server-Side Rendering) com Next.js, que conecta o frontend ao ecossistema backend. VueJS (ITEM Sistemas e Digital One). HTML5, CSS3 e JavaScript são a base sólida sobre a qual Vue e React foram construídos, com domínio aplicado profissionalmente. Gosta e estuda frontend semanalmente — o foco maior em backend é uma questão de trajetória, não de limitação. Preferências: Tailwind CSS, ShadCN/UI.
+
+## CMS — Headless CMS
+
+Experiência prática com CMS modernos headless: Payload CMS e Directus. Conhecimento em modelagem de conteúdo, criação de APIs customizadas, autenticação e gerenciamento de mídia. Capacidade de avaliar trade-offs entre CMS e soluções customizadas para diferentes cenários de projeto.
 
 ## Banco de Dados
 
